@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerii responsive</title>
+    <style>
+       
+        div.img {
+    margin: 5px;
+    background: linear-gradient(#14eff7 70%, hsl(120, 5%, 96%) 50%);
+    border: 3px solid #ccc;
+    float: left;
+    width: 180px;
+    height: 160px;
+border-radius: 6px;
+}	
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+.grid1{
+width: 90%;
+max-width: 960px;
+margin: auto;
+}
+
+.grid1 ::after{
+    content: "";
+    display: block;
+    clear: left;
+}
+.column{
+float: left;
+width: 16,66%;
+box-sizing: border-box;
+padding: 8px;
+}
+
+#grid1{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+grid-auto-rows: minmax(100px,auto);
+gap: 16px;
+}
+
+
+@media screen and (max-width:1024px) {
+    .column{
+        width: 33.33%;
+    }
+    
+}
+@media screen and (max-width:768px) {
+    .column{
+        width: 50%;
+    }
+    
+}
+@media screen and (max-width:414px) {
+    .column{
+        width: 100%;
+    }
+    
+}
+
+
+
+    </style>
+</head>
+<body> 
+    <h1>Gallery Heading</h1>
+    <div id="grid1">
+    
+        <div class="img">
+          <a target="_blank" href="placeholder-image.png">
+            <img src="placeholder-image.png" alt="png1" >
+          </a>
+          <div class="desc">Image Title</div>
+        </div>
+        
+        <div class="img">
+          <a target="_blank" href="placeholder-image.png">
+            <img src="placeholder-image.png" alt="png2" >
+          </a>
+          <div class="desc">Image Title</div>
+        </div>
+        
+        
+        <div class="img">
+          <a target="_blank" href="placeholder-image.png">
+            <img src="placeholder-image.png" alt="png3" >
+          </a>
+          <div class="desc">Image Title</div>
+        </div>
+        
+        
+        <div class="img">
+          <a target="_blank" href="placeholder-image.png">
+            <img src="placeholder-image.png" alt="png4" >
+          </a>
+          <div class="desc">Image Title</div>
+        </div>
+        
+        <div class="img">
+          <a target="_blank" href="placeholder-image.png">
+            <img src="placeholder-image.png" alt="png5" >
+          </a>
+          <div class="desc">Image Title</div>
+        </div>
+        
+        <div class="img">
+          <a target="_blank" href="placeholder-image.png">
+            <img src="placeholder-image.png" alt="png6" >
+          </a>
+          <div class="desc">Image Title</div>
+        </div>
+        <div class="img">
+          <a target="_blank" href="placeholder-image.png">
+            <img src="placeholder-image.png" alt="png7" >
+          </a>
+          <div class="desc">Image Title</div>
+        </div>
+        
+        <div class="img">
+          <a target="_blank" href="placeholder-image.png">
+            <img src="placeholder-image.png" alt="png8" >
+          </a>
+          <div class="desc">Image Title</div>
+        </div>
+        
+        <div class="img">
+          <a target="_blank" href="placeholder-image.png">
+            <img src="placeholder-image.png" alt="png9" >
+          </a>
+          <div class="desc">Image Title</div>
+        </div>
+        
+        <div class="img">
+          <a target="_blank" href="placeholder-image.png">
+            <img src="placeholder-image.png" alt="png10">
+          </a>
+          <div class="desc">Image Title</div>
+        </div>
+    </div>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pretium varius varius. Duis volutpat elementum neque, sed congue neque luctus ut. Nunc ligula lacus, hendrerit eget urna finibus, tristique ullamcorper nulla. Pellentesque congue laoreet eros. Nunc sit amet ipsum id ex rhoncus ornare quis eu mi. Morbi ac finibus odio. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc mattis
+    tempus tempor. Etiam at neque sed nisl ornare semper pharetra non sapien. Praesent pellentesque, ipsum a fermentum fermentum, sapien dui pharetra felis, in dictum arcu urna in nibh. Aliquam pulvinar pellentesque nisl, pharetra ultricies mauris auctor vel. Aliquam erat volutpat. Vestibulum suscipit ut ligula finibus semper. In hac habitasse platea dictumst. Fusce ante nisi, auctor vel fermentum sed, tincidunt non ex. 
+</p>
+
+    
+    
+</body>
+</html>
